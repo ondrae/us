@@ -247,8 +247,6 @@ placesLayer.eachLayer(function(place) {
       }
     });
 
-placesLayer.addTo(map);
-
 // Ahead of time, select the elements we'll need -
 // the narrative container and the individual sections
 var narrative = document.getElementById('narrative'),
@@ -260,6 +258,8 @@ setId('cover');
 function setId(newId) {
     // If the ID hasn't actually changed, don't do anything
     if (newId === currentId) return;
+    // Add the pictures to the map after the first scroll
+    if (newId === "sf") placesLayer.addTo(map);
     // Otherwise, iterate through layers, zooming to the layer
     placesLayer.eachLayer(function(layer) {
         if (layer.feature.properties.id === newId) {
@@ -288,7 +288,7 @@ narrative.onscroll = _(function(e) {
         }
     };
     setId(newId);
-}).debounce(10);
+}).debounce(50);
 
 </script>
 </body>
