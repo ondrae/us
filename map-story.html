@@ -231,9 +231,13 @@ var places = [
 
 L.mapbox.accessToken = 'pk.eyJ1IjoiY29kZWZvcmFtZXJpY2EiLCJhIjoiSTZlTTZTcyJ9.3aSlHLNzvsTwK-CYfZsG_Q';
 
-var map = L.mapbox.map('map', 'codeforamerica.18b1e855', { 
+var map = L.map('map',{
+    center : [37.777119, -122.419640],
+    zoom : 12,
     zoomControl: false
     });
+
+var stamenLayer = L.tileLayer('http://{s}.tile.stamen.com/watercolor/{z}/{x}/{y}.jpg').addTo(map);
 
 var placesLayer = L.mapbox.featureLayer(places);
 
