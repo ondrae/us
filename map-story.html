@@ -8,7 +8,7 @@
 <script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.4/mapbox.js'></script>
 <link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.4/mapbox.css' rel='stylesheet' />
 <style>
-  body { margin:0; padding:0; }
+  body { margin:0; padding:0; font-family: "Gill Sans Extrabold", Helvetica, sans-serif}
   #map { position:absolute; top:0; bottom:0; width:100%; }
   .markerimg {
     width: 500px;
@@ -50,6 +50,30 @@ section.active {
   background:#fff;
   color:#404040;
   }
+
+@media (max-width:640px) {
+
+    article {
+        width:100%;
+        min-width:100%;
+        padding-top:0px;
+        padding-bottom:200%;
+    }
+    .sections {
+        width:100%;
+        min-width:100%;
+        padding-top:0px;
+        padding-bottom:200%;
+        background:none;
+    }
+    section {
+        visibility: hidden;
+    }
+    section.active {
+        visibility: visible;
+    }
+
+}
 </style>
 <div id='map'></div>
 
@@ -212,10 +236,9 @@ var map = L.mapbox.map('map', 'codeforamerica.18b1e855', {
 
 var placesLayer = L.mapbox.featureLayer(places);
 
-placesLayer.eachLayer(function(marker) {
-      feature = marker.feature;
-      if (feature.properties.icon){
-        marker.setIcon(L.icon(feature.properties.icon));
+placesLayer.eachLayer(function(place) {
+      if (place.feature.properties.icon){
+        place.setIcon(L.icon(place.feature.properties.icon));
       }
     });
 
@@ -260,7 +283,7 @@ narrative.onscroll = _(function(e) {
         }
     };
     setId(newId);
-}).debounce(100);
+}).debounce(10);
 
 </script>
 </body>
