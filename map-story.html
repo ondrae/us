@@ -81,7 +81,7 @@ section.active {
 <article id='narrative'>
   <div class='sections prose'>
     <section id='cover' class='cover active'>
-      <h2>The Adventures of the Andrew + Adrienne</h2>
+      <h2>The Adventures of Andrew + Adrienne</h2>
       <small class='scroll quiet'>Scroll &#x25BE;</small>
     </section>
     <section id='sf'>
@@ -155,12 +155,7 @@ var places = [
     { "type" : "Feature",
     "geometry" : { "type": "Point", 
         "coordinates": [-122.419640, 37.777119] },
-    "properties": { "id": "cover", "zoom": 2 }
-    },
-    { "type" : "Feature",
-    "geometry" : { "type": "Point", 
-        "coordinates": [-122.419640, 37.777119] },
-    "properties": { "id": "sf", "zoom": 9,
+    "properties": { "id": "sf", "zoom": 12,
         "icon" : { 
             "iconUrl" : "images/ades_bday.png",
             "className" : "markerimg"
@@ -170,63 +165,68 @@ var places = [
     { "type" : "Feature",
     "geometry": { "type": "Point",
         "coordinates": [-94.61915, 39.11325] },
-    "properties": { "id": "kc", "zoom": 9,
+    "properties": { "id": "kc", "zoom": 12,
         "icon" : { 
-            "iconUrl" : "kcandrew.png",
-            "className" : "markerimg",
-            "iconSize" : [250, 250]
+            "iconUrl" : "images/kc.png",
+            "className" : "markerimg"
              }
         }
     },
     { "type" : "Feature",
     "geometry": { "type": "Point",
     "coordinates": [-112.716408, 36.195267] },
-    "properties": { "id": "grandcanyon", "zoom": 9,
+    "properties": { "id": "grandcanyon", "zoom": 10,
         "icon" : { 
-            "iconUrl" : "gc.JPG",
-            "className" : "markerimg",
-            "iconSize" : [250, 250]
+            "iconUrl" : "images/gc.png",
+            "className" : "markerimg"
              }
         }
     },
     { "type" : "Feature",
     "geometry": { "type": "Point",
     "coordinates": [-121.811142, 36.272491] },
-    "properties": { "id": "bigsur", "zoom": 9,
+    "properties": { "id": "bigsur", "zoom": 12,
         "icon" : { 
-            "iconUrl" : "bigsur.png",
-            "className" : "markerimg",
-            "iconSize" : [250, 250]
+            "iconUrl" : "images/bigsur.png",
+            "className" : "markerimg"
              }
         }
     },
     { "type" : "Feature",
     "geometry": { "type": "Point",
     "coordinates": [-118.245323, 34.053490] },
-    "properties": { "id": "la", "zoom": 9,
+    "properties": { "id": "la", "zoom": 10,
         "icon" : { 
-            "iconUrl" : "line.png",
-            "className" : "markerimg",
-            "iconSize" : [250, 250]
+            "iconUrl" : "images/line.png",
+            "className" : "markerimg"
+             }
+        }
+    },
+    { "type" : "Feature",
+    "geometry": { "type": "Point",
+    "coordinates": [-87.632446, 41.884251] },
+    "properties": { "id": "chicago", "zoom": 12,
+        "icon" : { 
+            "iconUrl" : "images/chicago.png",
+            "className" : "markerimg"
              }
         }
     },
     { "type" : "Feature",
     "geometry": { "type": "Point",
     "coordinates": [-93.264931, 44.979031] },
-    "properties": { "id": "mpls", "zoom": 9,
+    "properties": { "id": "mpls", "zoom": 12,
         "icon" : { 
-            "iconUrl" : "line.png",
-            "className" : "markerimg",
-            "iconSize" : [250, 250]
+            "iconUrl" : "images/mpls.png",
+            "className" : "markerimg"
              }
         }
     },
-    { "type" : "Feature",
-    "geometry": { "type": "Point",
-    "coordinates": [-115.139969, 36.171909] },
-    "properties": { "id": "vegas", "zoom": 9 }
-    },
+    // { "type" : "Feature",
+    // "geometry": { "type": "Point",
+    // "coordinates": [-115.139969, 36.171909] },
+    // "properties": { "id": "vegas", "zoom": 9 }
+    // },
 ]
 
 L.mapbox.accessToken = 'pk.eyJ1IjoiY29kZWZvcmFtZXJpY2EiLCJhIjoiSTZlTTZTcyJ9.3aSlHLNzvsTwK-CYfZsG_Q';
