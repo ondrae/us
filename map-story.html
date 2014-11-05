@@ -264,7 +264,7 @@ var placesLayer = L.mapbox.featureLayer(places);
 placesLayer.eachLayer(function(place) {
       if (place.feature.properties.icon){
         place.feature.properties.icon.className = "markerimg";
-        place.feature.properties.icon.iconAnchor = [250,0];
+        place.feature.properties.icon.iconAnchor = [125,0];
         place.setIcon(L.icon(place.feature.properties.icon));
       }
     });
