@@ -91,19 +91,13 @@ var places = [
     },
     { "type" : "Feature",
     "geometry": { "type": "Point",
-    "coordinates": [-109.549797, 38.573269] },
-    "properties": { "id": "moab", "zoom": 10,
-        "icon" : { 
-            "iconUrl" : "images/moab.png"
+    "coordinates": [-115.139969, 36.171909] },
+    "properties": { "id": "vegas", "zoom": 12,
+    "icon" : { 
+            "iconUrl" : "images/vegas.jpg"
              }
         }
-    },
-    
-    // { "type" : "Feature",
-    // "geometry": { "type": "Point",
-    // "coordinates": [-115.139969, 36.171909] },
-    // "properties": { "id": "vegas", "zoom": 9 }
-    // },
+    }
 ]
 
 L.mapbox.accessToken = 'pk.eyJ1IjoiY29kZWZvcmFtZXJpY2EiLCJhIjoiSTZlTTZTcyJ9.3aSlHLNzvsTwK-CYfZsG_Q';
@@ -153,6 +147,22 @@ function setId(newId) {
     // so that we know to do nothing at the beginning
     // of this function if it hasn't changed between calls
     currentId = newId;
+
+    // Detect where they are and show that map
+    if (newId == 'you') {
+        map.removeLayer(placesLayer);
+        map.locate();
+        map.on('locationfound', function(e) {
+            // Start and end points, in x = longitude, y = latitude values
+            var start = { x: e.longitude, y: e.latitude };
+            var end = { x: -115.139969, y: 36.171909 };
+            var generator = new arc.GreatCircle(start, end, { name: 'Join us in Vegas' });
+            var line = generator.Arc(100, { offset: 10 });
+            lineLayer = L.geoJson(line.json()).addTo(map);
+            // map.setView(e.latlng, 10);
+            map.fitBounds(lineLayer.getBounds());
+        });
+    }
 }
 
 narrative.onscroll = _(function(e) {
