@@ -8,75 +8,9 @@
 <script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.4/mapbox.js'></script>
 <link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.4/mapbox.css' rel='stylesheet' />
 <script src='https://api.tiles.mapbox.com/mapbox.js/plugins/arc.js/v0.1.0/arc.js'></script>
-<style>
-  body { margin:0; padding:0; font-family: "Gill Sans Extrabold", Helvetica, sans-serif}
-  #map { position:absolute; top:0; bottom:0; width:100%; }
-  .markerimg {
-    width: 250px;
-    height: 250px;
-    border-radius: 250px;
-    background-color: white;
-    opacity: 0.8;
-  }
-</style>
+<link href='css/map-story.css' rel='stylesheet' />
 </head>
 <body>
-<style>
-article {
-  position:absolute;
-  top:0;
-  right:0;
-  bottom:0px;
-  left:0;
-  overflow:auto;
-  padding-bottom: 800px;
-  }
-.quiet {
-  color:rgba(0,0,0,0.5);
-  }
-.scroll {
-  display:block;
-  text-align:center;
-  }
-.sections {
-  background:rgba(255,255,255,0.5);
-  width:240px;
-  }
-section {
-  padding:20px;
-  color:rgba(0,0,0,0.5);
-  -webkit-transition:background 500ms, color 500ms;
-          transition:background 500ms, color 500ms;
-  }
-section.active {
-  background:#fff;
-  color:#404040;
-  }
-
-@media (max-width:640px) {
-
-    article {
-        width:100%;
-        min-width:100%;
-        padding-top:0px;
-        padding-bottom:200%;
-    }
-    .sections {
-        width:100%;
-        min-width:100%;
-        padding-top:0px;
-        padding-bottom:200%;
-        background:none;
-    }
-    section {
-        visibility: hidden;
-    }
-    section.active {
-        visibility: visible;
-    }
-
-}
-</style>
 <div id='map'></div>
 
 <article id='narrative'>
@@ -128,17 +62,14 @@ section.active {
       <h3>Minneapolis</h3>
       <p>Whatever</p>
     </section>
-    <section id='moab'>
-      <h3>Moab</h3>
-      <p>yeakhjsd</p>
-    </section>
     <section id='tokyo'>
       <h3>Tokyo</h3>
       <p>sdklfj</p>
     </section>
     <section id='you'>
       <h3>You</h3>
-      <p>asdfsdafs</p>
+      <p>We'd be honored to have you join us from your home to our celebration in ... 
+        <i>wait for it</i> ... </p>
     </section>
     <section id='vegas'>
       <h3>Vegas</h3>

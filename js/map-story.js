@@ -132,7 +132,7 @@ function setId(newId) {
     // If the ID hasn't actually changed, don't do anything
     if (newId === currentId) return;
     // Add the pictures to the map after the first scroll
-    if (newId != "cover") placesLayer.addTo(map);
+    if (newId != "you") placesLayer.addTo(map);
     // Otherwise, iterate through layers, zooming to the layer
     placesLayer.eachLayer(function(layer) {
         if (layer.feature.properties.id === newId) {
