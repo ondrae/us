@@ -157,8 +157,7 @@ var places = [
         "coordinates": [-122.419640, 37.777119] },
     "properties": { "id": "sf", "zoom": 12,
         "icon" : { 
-            "iconUrl" : "images/ades_bday.png",
-            "className" : "markerimg"
+            "iconUrl" : "images/ades_bday.png"
              }
         }
     },
@@ -167,8 +166,7 @@ var places = [
         "coordinates": [-94.61915, 39.11325] },
     "properties": { "id": "kc", "zoom": 12,
         "icon" : { 
-            "iconUrl" : "images/kc.png",
-            "className" : "markerimg"
+            "iconUrl" : "images/kc.png"
              }
         }
     },
@@ -177,8 +175,7 @@ var places = [
     "coordinates": [-112.716408, 36.195267] },
     "properties": { "id": "grandcanyon", "zoom": 10,
         "icon" : { 
-            "iconUrl" : "images/gc.png",
-            "className" : "markerimg"
+            "iconUrl" : "images/gc.png"
              }
         }
     },
@@ -187,8 +184,7 @@ var places = [
     "coordinates": [-121.811142, 36.272491] },
     "properties": { "id": "bigsur", "zoom": 12,
         "icon" : { 
-            "iconUrl" : "images/bigsur.png",
-            "className" : "markerimg"
+            "iconUrl" : "images/bigsur.png"
              }
         }
     },
@@ -197,8 +193,7 @@ var places = [
     "coordinates": [-118.245323, 34.053490] },
     "properties": { "id": "la", "zoom": 10,
         "icon" : { 
-            "iconUrl" : "images/line.png",
-            "className" : "markerimg"
+            "iconUrl" : "images/line.png"
              }
         }
     },
@@ -207,8 +202,7 @@ var places = [
     "coordinates": [-87.632446, 41.884251] },
     "properties": { "id": "chicago", "zoom": 12,
         "icon" : { 
-            "iconUrl" : "images/chicago.png",
-            "className" : "markerimg"
+            "iconUrl" : "images/chicago.png"
              }
         }
     },
@@ -217,8 +211,25 @@ var places = [
     "coordinates": [-99.133133, 19.431950] },
     "properties": { "id": "mexicocity", "zoom": 12,
         "icon" : { 
-            "iconUrl" : "images/mexicocity.jpg",
-            "className" : "markerimg"
+            "iconUrl" : "images/mexicocity.jpg"
+             }
+        }
+    },
+    { "type" : "Feature",
+    "geometry": { "type": "Point",
+    "coordinates": [-73.966301, 40.783401] },
+    "properties": { "id": "nyc", "zoom": 12,
+        "icon" : { 
+            "iconUrl" : "images/nyc.png"
+             }
+        }
+    },
+    { "type" : "Feature",
+    "geometry": { "type": "Point",
+    "coordinates": [-105.447998, 20.488300] },
+    "properties": { "id": "yelapa", "zoom": 10,
+        "icon" : { 
+            "iconUrl" : "images/yelapa.png"
              }
         }
     },
@@ -227,8 +238,7 @@ var places = [
     "coordinates": [-93.264931, 44.979031] },
     "properties": { "id": "mpls", "zoom": 12,
         "icon" : { 
-            "iconUrl" : "images/mpls.png",
-            "className" : "markerimg"
+            "iconUrl" : "images/mpls.png"
              }
         }
     },
@@ -253,6 +263,8 @@ var placesLayer = L.mapbox.featureLayer(places);
 
 placesLayer.eachLayer(function(place) {
       if (place.feature.properties.icon){
+        place.feature.properties.icon.className = "markerimg";
+        place.feature.properties.icon.iconAnchor = [250,0];
         place.setIcon(L.icon(place.feature.properties.icon));
       }
     });
@@ -269,7 +281,7 @@ function setId(newId) {
     // If the ID hasn't actually changed, don't do anything
     if (newId === currentId) return;
     // Add the pictures to the map after the first scroll
-    if (newId === "sf") placesLayer.addTo(map);
+    if (newId != "cover") placesLayer.addTo(map);
     // Otherwise, iterate through layers, zooming to the layer
     placesLayer.eachLayer(function(layer) {
         if (layer.feature.properties.id === newId) {
