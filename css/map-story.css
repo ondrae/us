@@ -1,4 +1,4 @@
-body { margin:0; padding:0; font-family: "Gill Sans Extrabold", Helvetica, sans-serif}
+body { margin:0; padding:0; font-family: 'Muli', sans-serif;}
   #map { position:absolute; top:0; bottom:0; width:100%; }
   .markerimg {
     width: 250px;
