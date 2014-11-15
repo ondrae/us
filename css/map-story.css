@@ -11,10 +11,10 @@ a:visited { color: #000;}
 #left .date, #left .date:hover { background-color: #00FF40;}
 #left b { color: #BE81F7;}
 
-#left li {color: #00FF40;}
-#left li:hover {color: #fff;}
-#left li a {text-decoration: none; color #fff;}
-#left li a:visited {color: #fff;}
+#left c {color: #00FF40;}
+#left c:hover {color: #fff;}
+#left c a {text-decoration: none; color #fff;}
+#left c a:visited {color: #fff;}
 
 #left {
   color: #fff;
