@@ -11,6 +11,8 @@ a:visited { color: #000;}
 #left .date, #left .date:hover { background-color: #00FF40;}
 #left b { color: #BE81F7;}
 
+#left .link, #left .link:hover {color: #00FF40;}
+
 #left {
   color: #fff;
   margin-left: 5%;
