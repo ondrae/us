@@ -9,6 +9,7 @@ a { text-decoration: none; color: #000; }
 a:visited { color: #000;}
 
 #left {
+  color: #fff;
   margin-left: 5%;
   margin-right: 5%;
   width: 40%;
