@@ -13,8 +13,8 @@ a:visited { color: #000;}
 
 #left li, {color: #00FF40;}
 #left li:hover {color: #fff;}
-a li {text-decoration: none; color #fff;}
-a li:visited {color: #fff;}
+li a {text-decoration: none; color #fff;}
+li a:visited {color: #fff;}
 
 #left {
   color: #fff;
