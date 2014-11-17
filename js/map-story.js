@@ -1,9 +1,9 @@
 var places = [
     { "type" : "Feature",
-    "geometry" : { "type": "Point", 
+    "geometry" : { "type": "Point",
         "coordinates": [-122.419640, 37.777119] },
     "properties": { "id": "sf", "zoom": 12,
-        "icon" : { 
+        "icon" : {
             "iconUrl" : "images/ades_bday.png"
              }
         }
@@ -12,7 +12,7 @@ var places = [
     "geometry": { "type": "Point",
         "coordinates": [-94.61915, 39.11325] },
     "properties": { "id": "kc", "zoom": 12,
-        "icon" : { 
+        "icon" : {
             "iconUrl" : "images/kc.png"
              }
         }
@@ -21,7 +21,7 @@ var places = [
     "geometry": { "type": "Point",
     "coordinates": [-112.716408, 36.195267] },
     "properties": { "id": "grandcanyon", "zoom": 10,
-        "icon" : { 
+        "icon" : {
             "iconUrl" : "images/gc.png"
              }
         }
@@ -30,7 +30,7 @@ var places = [
     "geometry": { "type": "Point",
     "coordinates": [-121.811142, 36.272491] },
     "properties": { "id": "bigsur", "zoom": 12,
-        "icon" : { 
+        "icon" : {
             "iconUrl" : "images/bigsur.png"
              }
         }
@@ -39,7 +39,7 @@ var places = [
     "geometry": { "type": "Point",
     "coordinates": [-118.245323, 34.053490] },
     "properties": { "id": "la", "zoom": 10,
-        "icon" : { 
+        "icon" : {
             "iconUrl" : "images/line.png"
              }
         }
@@ -48,7 +48,7 @@ var places = [
     "geometry": { "type": "Point",
     "coordinates": [-87.632446, 41.884251] },
     "properties": { "id": "chicago", "zoom": 12,
-        "icon" : { 
+        "icon" : {
             "iconUrl" : "images/chicago.png"
              }
         }
@@ -57,7 +57,7 @@ var places = [
     "geometry": { "type": "Point",
     "coordinates": [-99.133133, 19.431950] },
     "properties": { "id": "mexicocity", "zoom": 12,
-        "icon" : { 
+        "icon" : {
             "iconUrl" : "images/mexicocity.jpg"
              }
         }
@@ -66,7 +66,7 @@ var places = [
     "geometry": { "type": "Point",
     "coordinates": [-73.966301, 40.783401] },
     "properties": { "id": "nyc", "zoom": 12,
-        "icon" : { 
+        "icon" : {
             "iconUrl" : "images/nyc.png"
              }
         }
@@ -75,7 +75,7 @@ var places = [
     "geometry": { "type": "Point",
     "coordinates": [-105.447998, 20.488300] },
     "properties": { "id": "yelapa", "zoom": 10,
-        "icon" : { 
+        "icon" : {
             "iconUrl" : "images/yelapa.png"
              }
         }
@@ -84,7 +84,7 @@ var places = [
     "geometry": { "type": "Point",
     "coordinates": [-93.264931, 44.979031] },
     "properties": { "id": "mpls", "zoom": 12,
-        "icon" : { 
+        "icon" : {
             "iconUrl" : "images/mpls.png"
              }
         }
@@ -93,8 +93,17 @@ var places = [
     "geometry": { "type": "Point",
     "coordinates": [-115.139969, 36.171909] },
     "properties": { "id": "vegas", "zoom": 12,
-    "icon" : { 
+    "icon" : {
             "iconUrl" : "images/vegas.jpg"
+             }
+        }
+    },
+    { "type" : "Feature",
+    "geometry": { "type": "Point",
+    "coordinates": [-115.139969, 36.171909] },
+    "properties": { "id": "tokyo", "zoom": 12,
+    "icon" : {
+            "iconUrl" : "images/tokyo.jpg"
              }
         }
     }
