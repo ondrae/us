@@ -100,7 +100,7 @@ var places = [
     },
     { "type" : "Feature",
     "geometry": { "type": "Point",
-    "coordinates": [35.659399, 139.699726] },
+    "coordinates": [-139.699726, 35.659399] },
     "properties": { "id": "tokyo", "zoom": 12,
     "icon" : {
             "iconUrl" : "images/tokyo.png"
