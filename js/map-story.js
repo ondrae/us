@@ -94,16 +94,16 @@ var places = [
     "coordinates": [-115.139969, 36.171909] },
     "properties": { "id": "vegas", "zoom": 12,
     "icon" : {
-            "iconUrl" : "images/vegas.jpg"
+            "iconUrl" : "images/vegas.png"
              }
         }
     },
     { "type" : "Feature",
     "geometry": { "type": "Point",
-    "coordinates": [-115.139969, 36.171909] },
+    "coordinates": [35.659399, 139.699726] },
     "properties": { "id": "tokyo", "zoom": 12,
     "icon" : {
-            "iconUrl" : "images/tokyo.jpg"
+            "iconUrl" : "images/tokyo.png"
              }
         }
     }
