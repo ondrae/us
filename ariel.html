@@ -3,68 +3,80 @@
 <head>
 <meta charset=utf-8 />
 <title>AAAH! 05.09.2015</title>
-<meta name="viewport" content="width=device-width">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <link href='http://fonts.googleapis.com/css?family=Muli:400,400italic|Oswald:400,700' rel='stylesheet' type='text/css'>
-<link href='css/map-story.css' rel='stylesheet' />
+<!-- <link href='css/map-story.css' rel='stylesheet' /> -->
 <style>
-    p {
-        font-size: 24px;
+  body { margin:0; padding:0; font-family: 'Muli', sans-serif;}
+  h1,h2 {
+      font-family: 'Oswald', sans-serif;
+  }
+  h1 { color: #FFF; font-size: 3em;}
+  .highlight {
+    color: #000;
+    background-color: #FF8000;
+    opacity: 0.8;
     }
-    .screen p {
-        position: relative;
-        top: -28px;
+
+  #ariel p, #ariel h1 {padding-left: 15px;}
+  p {
+      font-size: 24px;
+  }
+  .screen p {
+      position: relative;
+      top: -28px;
+  }
+  .screen {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  @media only screen and (min-width: 767px) {
+    #dear {
+      background-image: url("images/bday_bike.jpg");
+      background-size: auto 100%;
     }
-    .screen {
-      background-position: center center;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
+    #poise {
+      background-image: url("images/halloween.jpg");
     }
-    @media only screen and (min-width: 767px) {
-      #dear {
-        background-image: url("images/bday_bike.jpg");
-        background-size: auto 100%;
-      }
-      #poise {
-        background-image: url("images/halloween.jpg");
-      }
-      #clarity {
-        background-image: url("images/bklyn_bikes.jpg");
-      }
-      #sincerity {
-        background-image: url("images/boats.jpg");
-      }
-      #summit {
-        background-image: url("images/ariel.gif");
-      }
-      #baylights {
-        background-image: url("images/baylights.jpg");
-      }
+    #clarity {
+      background-image: url("images/bklyn_bikes.jpg");
     }
-    @media only screen and (max-width: 767px) {
-      #dear {
-        background-image: url("images/bday_bike_sm.jpg");
-        background-size: 400px;
-      }
-      #poise {
-        background-image: url("images/halloween.jpg");
-      }
-      #clarity {
-        background-image: url("images/bklyn_bikes.jpg");
-      }
-      #sincerity {
-        background-image: url("images/boats.jpg");
-      }
-      #summit {
-        background-image: url("images/ariel.gif");
-      }
-      #baylights {
-        background-image: url("images/baylights.jpg");
-      }
+    #sincerity {
+      background-image: url("images/boats.jpg");
     }
+    #summit {
+      background-image: url("images/ariel.gif");
+    }
+    #baylights {
+      background-image: url("images/baylights.jpg");
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    #dear {
+      background-image: url("images/bday_bike_sm.jpg");
+      background-size: 400px;
+    }
+    #poise {
+      background-image: url("images/halloween.jpg");
+    }
+    #clarity {
+      background-image: url("images/bklyn_bikes.jpg");
+    }
+    #sincerity {
+      background-image: url("images/boats.jpg");
+    }
+    #summit {
+      background-image: url("images/ariel.gif");
+    }
+    #baylights {
+      background-image: url("images/baylights.jpg");
+    }
+  }
 
 </style>
 </head>
