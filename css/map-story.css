@@ -9,9 +9,13 @@ h1 { color: #FFF; font-size: 3em;}
 a, a:visited { text-decoration: none; color: #FFF; }
 a:hover {color: #00FF40;}
 
-.highlight {color: #000; background-color: #FF8000;}
+.highlight {
+  color: #000;
+  background-color: #FF8000;
+  opacity: 0.8;
+  }
 
-#ariel p {padding-left: 15px;}
+#ariel p, #ariel h1 {padding-left: 15px;}
 
 #left .date, #left .date:hover { background-color: #00FF40;}
 #left b { color: #BE81F7;}
