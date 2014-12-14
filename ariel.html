@@ -23,23 +23,46 @@
       -o-background-size: cover;
       background-size: cover;
     }
-    #dear {
-      background-image: url("images/halloween.jpg");
+    @media only screen and (min-width: 767px) {
+      #dear {
+        background-image: url("images/bday_bike.jpg");
+        background-size: auto 100%;
+      }
+      #poise {
+        background-image: url("images/halloween.jpg");
+      }
+      #clarity {
+        background-image: url("images/bklyn_bikes.jpg");
+      }
+      #sincerity {
+        background-image: url("images/boats.jpg");
+      }
+      #summit {
+        background-image: url("images/ariel.gif");
+      }
+      #baylights {
+        background-image: url("images/baylights.jpg");
+      }
     }
-    #poise {
-      background-image: url("images/halloween.jpg");
-    }
-    #clarity {
-      background-image: url("images/bklyn_bikes.jpg");
-    }
-    #sincerity {
-      background-image: url("images/boats.jpg");
-    }
-    #summit {
-      background-image: url("images/ariel.gif");
-    }
-    #baylights {
-      background-image: url("images/baylights.jpg");
+    @media only screen and (max-width: 767px) {
+      #dear {
+        background-image: url("images/bday_bikes_sm.jpg");
+      }
+      #poise {
+        background-image: url("images/halloween.jpg");
+      }
+      #clarity {
+        background-image: url("images/bklyn_bikes.jpg");
+      }
+      #sincerity {
+        background-image: url("images/boats.jpg");
+      }
+      #summit {
+        background-image: url("images/ariel.gif");
+      }
+      #baylights {
+        background-image: url("images/baylights.jpg");
+      }
     }
 
 </style>
